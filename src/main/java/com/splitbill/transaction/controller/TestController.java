@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.splitbill.transaction.dto.UserInfoDto;
+import com.splitbill.transaction.factory.dto.UserInfoDto;
 import com.splitbill.transaction.factory.response.BaseResponse;
 import com.splitbill.transaction.utils.common.CurrentUserId;
 

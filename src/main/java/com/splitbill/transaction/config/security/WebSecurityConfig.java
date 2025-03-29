@@ -26,7 +26,7 @@ public class WebSecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/v1/transaction/test").permitAll()
+                        .requestMatchers("/v1/transaction/test", "/friendships/**").permitAll()
                         .anyRequest().authenticated())
                 .addFilterBefore(xUserIdAuthFilter(), UsernamePasswordAuthenticationFilter.class)
                 .build();
